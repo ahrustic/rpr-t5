@@ -141,11 +141,63 @@ public class Controller {
     }
 
     public void mod_click(){
-
+        String value = input.getText();
+        long valueNumber = Integer.parseInt(value);
+        this.fnumber = valueNumber;
+        input.setText("");
+        prom.setText(value + "%");
+        operation = "%";
     }
 
     public void jednako_click(){
+        switch(operation){
+            case"+":
+                String value = input.getText();
+                this.snumber = Integer.parseInt(value);
+                long system = this.fnumber + this.snumber;
+                input.setText(String.valueOf(system));
+                String oldProm = prom.getText();
+                prom.setText(oldProm + value);
+                break;
 
+            case"-":
+                String valueOduzimanje = input.getText();
+                this.snumber = Integer.parseInt(valueOduzimanje);
+                long systemOduzimanje = this.fnumber + this.snumber;
+                input.setText(String.valueOf(systemOduzimanje));
+                String oldPromOduzimanje = prom.getText();
+                prom.setText(oldPromOduzimanje + valueOduzimanje);
+                break;
+
+            case"x":
+                String valueMnozenje = input.getText();
+                this.snumber = Integer.parseInt(valueMnozenje);
+                long systemMnozenje = this.fnumber + this.snumber;
+                input.setText(String.valueOf(systemMnozenje));
+                String oldPromMnozenje = prom.getText();
+                prom.setText(oldPromMnozenje + valueMnozenje);
+                break;
+
+            case "/":
+                String valueD = input.getText();
+                this.snumber = Integer.parseInt(valueD);
+                long systemD = this.fnumber + this.snumber;
+                input.setText(String.valueOf(systemD));
+                String oldPromD = prom.getText();
+                prom.setText(oldPromD + valueD);
+                break;
+
+            case "%":
+                String valueMod = input.getText();
+                this.snumber = Integer.parseInt(valueMod);
+                long systemMod = this.fnumber + this.snumber;
+                input.setText(String.valueOf(systemMod));
+                String oldPromMod = prom.getText();
+                prom.setText(oldPromMod + valueMod);
+                break;
+
+
+        }
     }
 
 
