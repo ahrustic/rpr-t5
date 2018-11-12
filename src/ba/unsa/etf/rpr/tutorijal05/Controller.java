@@ -1,6 +1,8 @@
 package ba.unsa.etf.rpr.tutorijal05;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,10 +14,13 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 
 import javax.swing.*;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class Controller {
+public class Controller implements Initializable {
 
-    public JTextField input;
+    @FXML
+    public TextField input;
     public Button jedan;
     public Button dva;
     public Button tri;
@@ -31,7 +36,7 @@ public class Controller {
     public Button sabiranje;
     public Button mnozenje;
     public Button mod;
-    public Button djeljenje;
+    public Button dijeljenje;
     public Button jednako;
     public Label prom;
 
@@ -122,7 +127,7 @@ public class Controller {
         operation = "-";
     }
 
-    public void djeljenje_click(){
+    public void dijeljenje_click(){
         String value = input.getText();
         long valueNumber = Integer.parseInt(value);
         this.fnumber = valueNumber;
@@ -172,7 +177,7 @@ public class Controller {
             case"x":
                 String valueMnozenje = input.getText();
                 this.snumber = Integer.parseInt(valueMnozenje);
-                long systemMnozenje = this.fnumber + this.snumber;
+                long systemMnozenje = this.fnumber * this.snumber;
                 input.setText(String.valueOf(systemMnozenje));
                 String oldPromMnozenje = prom.getText();
                 prom.setText(oldPromMnozenje + valueMnozenje);
@@ -181,7 +186,7 @@ public class Controller {
             case "/":
                 String valueD = input.getText();
                 this.snumber = Integer.parseInt(valueD);
-                long systemD = this.fnumber + this.snumber;
+                long systemD = this.fnumber / this.snumber;
                 input.setText(String.valueOf(systemD));
                 String oldPromD = prom.getText();
                 prom.setText(oldPromD + valueD);
@@ -190,7 +195,7 @@ public class Controller {
             case "%":
                 String valueMod = input.getText();
                 this.snumber = Integer.parseInt(valueMod);
-                long systemMod = this.fnumber + this.snumber;
+                long systemMod = this.fnumber % this.snumber;
                 input.setText(String.valueOf(systemMod));
                 String oldPromMod = prom.getText();
                 prom.setText(oldPromMod + valueMod);
@@ -201,22 +206,8 @@ public class Controller {
     }
 
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }
