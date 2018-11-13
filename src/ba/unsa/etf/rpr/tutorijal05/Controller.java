@@ -17,99 +17,98 @@ import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller{
 
-    @FXML
-    public TextField input;
-    public Button jedan;
-    public Button dva;
-    public Button tri;
-    public Button cetiri;
-    public Button pet;
-    public Button sest;
-    public Button sedam;
-    public Button osam;
-    public Button devet;
-    public Button nula;
-    public Button zarez;
-    public Button oduzimanje;
-    public Button sabiranje;
-    public Button mnozenje;
-    public Button mod;
-    public Button dijeljenje;
-    public Button jednako;
-    public Label prom;
+    @FXML public TextField input;
+    @FXML public Button btn1;
+    @FXML public Button btn2;
+    @FXML public Button btn3;
+    @FXML public Button btn4;
+    @FXML public Button btn5;
+    @FXML public Button btn6;
+    @FXML public Button btn7;
+    @FXML public Button btn8;
+    @FXML public Button btn9;
+    @FXML public Button btn0;
+    @FXML public Button zarez;
+    @FXML public Button oduzimanje;
+    @FXML public Button plusBtn;
+    @FXML public Button mnozenje;
+    @FXML public Button mod;
+    @FXML public Button dijeljenje;
+    @FXML public Button equalsBtn;
+    @FXML public Label prom;
 
     private long fnumber;
     private long snumber;
     private String operation;
 
-    public void nula_click(){
+    public void btn00(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "0";
         input.setText(staraVrijednost + set);
     }
 
-    public void jedan_click(){
+    public void btn11(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "1";
         input.setText(staraVrijednost + set);
     }
 
-    public void dva_click(){
+    public void btn22(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "2";
         input.setText(staraVrijednost + set);
     }
 
-    public void tri_click(){
+    public void btn33(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "3";
         input.setText(staraVrijednost + set);
     }
 
-    public void cetiri_click(){
+    public void btn44(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "4";
         input.setText(staraVrijednost + set);
     }
 
-    public void pet_click(){
+    public void btn55(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "5";
         input.setText(staraVrijednost + set);
     }
 
-    public void sest_click(){
+    public void btn66(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "6";
         input.setText(staraVrijednost + set);
     }
 
-    public void sedam_click(){
+    public void btn77(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "7";
         input.setText(staraVrijednost + set);
     }
 
-    public void osam_click(){
+    public void btn88(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "8";
         input.setText(staraVrijednost + set);
     }
 
-    public void devet_click(){
+    public void btn99(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = "9";
         input.setText(staraVrijednost + set);
     }
 
-    public void zarez_click(){
+    public void zarez_click(ActionEvent actionEvent){
         String staraVrijednost = input.getText();
         String set = ".";
         input.setText(staraVrijednost + set);
     }
-    public void sabiranje_click(){
+    public void sabiranje_click(ActionEvent actionEvent){
         String value = input.getText();
         long valueNumber = Integer.parseInt(value);
         this.fnumber = valueNumber;
@@ -118,7 +117,7 @@ public class Controller implements Initializable {
         operation = "+";
     }
 
-    public void oduzimanje_click(){
+    public void oduzimanje_click(ActionEvent actionEvent){
         String value = input.getText();
         long valueNumber = Integer.parseInt(value);
         this.fnumber = valueNumber;
@@ -127,7 +126,7 @@ public class Controller implements Initializable {
         operation = "-";
     }
 
-    public void dijeljenje_click(){
+    public void dijeljenje_click(ActionEvent actionEvent){
         String value = input.getText();
         long valueNumber = Integer.parseInt(value);
         this.fnumber = valueNumber;
@@ -136,7 +135,7 @@ public class Controller implements Initializable {
         operation = "/";
     }
 
-    public void mnozenje_click(){
+    public void mnozenje_click(ActionEvent actionEvent){
         String value = input.getText();
         long valueNumber = Integer.parseInt(value);
         this.fnumber = valueNumber;
@@ -145,7 +144,7 @@ public class Controller implements Initializable {
         operation = "x";
     }
 
-    public void mod_click(){
+    public void mod_click(ActionEvent actionEvent){
         String value = input.getText();
         long valueNumber = Integer.parseInt(value);
         this.fnumber = valueNumber;
@@ -154,7 +153,7 @@ public class Controller implements Initializable {
         operation = "%";
     }
 
-    public void jednako_click(){
+    public void jednako_click(ActionEvent actionEvent){
         switch(operation){
             case"+":
                 String value = input.getText();
@@ -203,11 +202,5 @@ public class Controller implements Initializable {
 
 
         }
-    }
-
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-
     }
 }
