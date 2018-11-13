@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 <?import java.net.URL?>
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane alignment="CENTER" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
 
     <stylesheets>
         <URL value="@izgled.css"/>
