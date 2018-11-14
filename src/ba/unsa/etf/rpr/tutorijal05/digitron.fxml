@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -7,46 +9,96 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<?import java.net.URL?>
-<GridPane alignment="CENTER" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane alignment="CENTER" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
 
     <stylesheets>
-        <URL value="@izgled.css"/>
+        <URL value="@izgled.css" />
     </stylesheets>
 
     <columnConstraints>
-      <ColumnConstraints hgrow="ALWAYS" maxWidth="101.0" minWidth="10.0" percentWidth="0.0" prefWidth="70.0" />
-      <ColumnConstraints hgrow="ALWAYS" maxWidth="93.0" minWidth="10.0" prefWidth="72.0" />
-    <ColumnConstraints hgrow="ALWAYS" maxWidth="87.0" minWidth="10.0" prefWidth="67.0" />
-      <ColumnConstraints hgrow="ALWAYS" maxWidth="92.0" minWidth="10.0" prefWidth="77.0" />
-  </columnConstraints>
-  <rowConstraints>
-      <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="81.0" vgrow="ALWAYS" />
-    <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="59.0" vgrow="ALWAYS" />
-    <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="64.0" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="57.0" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="63.0" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="59.0" vgrow="ALWAYS" />
-  </rowConstraints>
-   <children>
-      <Button fx:id="btn1" mnemonicParsing="false" onAction="#btn11" prefHeight="40.0" prefWidth="64.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-      <Button fx:id="btn2" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn22" prefHeight="40.0" prefWidth="64.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-      <Button fx:id="btn3" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn33" prefHeight="40.0" prefWidth="64.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-      <Button fx:id="btn4" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn44" prefHeight="40.0" prefWidth="64.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Button fx:id="btn5" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn55" prefHeight="40.0" prefWidth="64.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Button fx:id="btn6" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn66" prefHeight="40.0" prefWidth="64.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Button fx:id="btn7" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn77" prefHeight="40.0" prefWidth="64.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-      <Button fx:id="btn8" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn88" prefHeight="40.0" prefWidth="64.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-      <Button fx:id="btn9" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn99" prefHeight="40.0" prefWidth="64.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-      <Button fx:id="zarez" contentDisplay="CENTER" mnemonicParsing="false" onAction="#zarez_click" prefHeight="40.0" prefWidth="64.0" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-      <Button fx:id="mod" contentDisplay="CENTER" mnemonicParsing="false" onAction="#mod_click" prefHeight="40.0" prefWidth="64.0" text="\%" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button fx:id="dijeljenje" contentDisplay="CENTER" mnemonicParsing="false" onAction="#dijeljenje_click" prefHeight="40.0" prefWidth="64.0" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button fx:id="mnozenje" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" text="x" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button fx:id="oduzimanje" contentDisplay="CENTER" mnemonicParsing="false" onAction="#oduzimanje_click" prefHeight="40.0" prefWidth="64.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button fx:id="add" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sabiranje_click" prefHeight="111.0" prefWidth="64.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-      <Button fx:id="eq" contentDisplay="CENTER" mnemonicParsing="false" onAction="#jednako_click" prefHeight="114.0" prefWidth="64.0" text="=" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-      <Button fx:id="btn0" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn00" prefHeight="40.0" prefWidth="131.0" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-      <TextField fx:id="input" prefHeight="81.0" prefWidth="286.0" GridPane.columnSpan="4" />
-      <Label fx:id="prom" prefHeight="21.0" prefWidth="139.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowSpan="2" GridPane.valignment="TOP" />
-   </children>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="101.0" minWidth="10.0" percentWidth="0.0" prefWidth="70.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="93.0" minWidth="10.0" prefWidth="72.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="87.0" minWidth="10.0" prefWidth="67.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="92.0" minWidth="10.0" prefWidth="77.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="81.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="59.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="64.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="57.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="63.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="59.0" vgrow="ALWAYS" />
+    </rowConstraints>
+    <children>
+        <Button fx:id="btn1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn11" prefHeight="40.0" prefWidth="64.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn2" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn22" prefHeight="40.0" prefWidth="64.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn3" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn33" prefHeight="40.0" prefWidth="64.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn4" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn44" prefHeight="40.0" prefWidth="64.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn5" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn55" prefHeight="40.0" prefWidth="64.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn6" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn66" prefHeight="40.0" prefWidth="64.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn7" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn77"  prefHeight="40.0" prefWidth="64.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn8" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn88" prefHeight="40.0" prefWidth="64.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn9" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn99" prefHeight="40.0" prefWidth="64.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="zarez" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0"onAction="#btn00"  prefWidth="64.0" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="mod" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" onAction="#mod_click" prefWidth="64.0" text="\%" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="dijeljenje" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#dijeljenje_click" prefHeight="40.0" prefWidth="64.0" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="mnozenje" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mnozenje_click" prefHeight="40.0" prefWidth="64.0" text="x" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="oduzimanje" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false"  onAction="#oduzimanje_click" prefHeight="40.0" prefWidth="64.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="add" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sabiranje_click" prefHeight="111.0" prefWidth="64.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="eq" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#equalsBtn" prefHeight="114.0" prefWidth="64.0" text="=" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <Button fx:id="btn0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn00" prefHeight="40.0" prefWidth="131.0" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding></Button>
+        <TextField fx:id="input" prefHeight="81.0" prefWidth="286.0" GridPane.columnSpan="4" />
+        <Label fx:id="prom" prefHeight="21.0" prefWidth="139.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowSpan="2" GridPane.valignment="TOP" />
+    </children>
 </GridPane>
