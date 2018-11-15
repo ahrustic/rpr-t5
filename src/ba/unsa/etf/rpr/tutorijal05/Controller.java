@@ -86,32 +86,62 @@ public class Controller implements Initializable {
 
     public void btn3(ActionEvent actionEvent){
         String staraVrijednost = display.getText();
-        String set = "3";
-        display.setText(staraVrijednost + set);
+        if (staraVrijednost == "0"){
+            String set = "3";
+            display.setText(set);
+        }
+        else {
+            String set = "3";
+            display.setText(staraVrijednost + set);
+        }
     }
 
     public void btn4(ActionEvent actionEvent){
         String staraVrijednost = display.getText();
-        String set = "4";
-        display.setText(staraVrijednost + set);
+        if (staraVrijednost == "0"){
+            String set = "4";
+            display.setText(set);
+        }
+        else {
+            String set = "4";
+            display.setText(staraVrijednost + set);
+        }
     }
 
     public void btn5(ActionEvent actionEvent){
         String staraVrijednost = display.getText();
-        String set = "5";
-        display.setText(staraVrijednost + set);
+        if (staraVrijednost == "0"){
+            String set = "5";
+            display.setText(set);
+        }
+        else {
+            String set = "5";
+            display.setText(staraVrijednost + set);
+        }
     }
 
     public void btn6(ActionEvent actionEvent){
         String staraVrijednost = display.getText();
-        String set = "6";
-        display.setText(staraVrijednost + set);
+        if (staraVrijednost == "0"){
+            String set = "6";
+            display.setText(set);
+        }
+        else {
+            String set = "6";
+            display.setText(staraVrijednost + set);
+        }
     }
 
     public void btn7(ActionEvent actionEvent){
         String staraVrijednost = display.getText();
-        String set = "7";
-        display.setText(staraVrijednost + set);
+        if (staraVrijednost == "0"){
+            String set = "7";
+            display.setText(set);
+        }
+        else {
+            String set = "7";
+            display.setText(staraVrijednost + set);
+        }
     }
 
     public void btn8(ActionEvent actionEvent){
@@ -128,8 +158,14 @@ public class Controller implements Initializable {
 
     public void btn9(ActionEvent actionEvent){
         String staraVrijednost = display.getText();
-        String set = "9";
-        display.setText(staraVrijednost + set);
+        if (staraVrijednost == "0"){
+            String set = "9";
+            display.setText(set);
+        }
+        else {
+            String set = "9";
+            display.setText(staraVrijednost + set);
+        }
     }
 
     public void dotBtn(ActionEvent actionEvent){
@@ -139,16 +175,21 @@ public class Controller implements Initializable {
     }
     public void sabiranje_click(ActionEvent actionEvent){
         String value = display.getText();
-        double valueNumber = Double.parseDouble(value);
-        setFnumber(valueNumber);
-        display.setText("");
-        prom.setText(value + "+");
+        if (operation == "") {
+            double valueNumber = Double.parseDouble(value);
+            setFnumber(valueNumber);
+            display.setText("");
+            prom.setText(value + "+");
+            operation = "+";
+        }
+
         operation = "+";
+
     }
 
     public void oduzimanje_click(ActionEvent actionEvent){
         String value = display.getText();
-        long valueNumber = Integer.parseInt(value);
+        double valueNumber = Double.parseDouble(value);
         setFnumber(valueNumber);
         display.setText("");
         prom.setText(value + "-");
@@ -157,7 +198,7 @@ public class Controller implements Initializable {
 
     public void dijeljenje_click(ActionEvent actionEvent){
         String value = display.getText();
-        long valueNumber = Integer.parseInt(value);
+        double valueNumber = Double.parseDouble(value);
         setFnumber(valueNumber);
         display.setText("");
         prom.setText(value + "/");
@@ -166,7 +207,7 @@ public class Controller implements Initializable {
 
     public void mnozenje_click(ActionEvent actionEvent){
         String value = display.getText();
-        long valueNumber = Integer.parseInt(value);
+        double valueNumber = Double.parseDouble(value);
         setFnumber(valueNumber);
         display.setText("");
         prom.setText(value + "x");
@@ -175,7 +216,7 @@ public class Controller implements Initializable {
 
     public void mod_click(ActionEvent actionEvent){
         String value = display.getText();
-        long valueNumber = Integer.parseInt(value);
+        double valueNumber = Double.parseDouble(value);
         setFnumber(valueNumber);
         display.setText("");
         prom.setText(value + "%");
@@ -195,7 +236,7 @@ public class Controller implements Initializable {
             case"-":
                 String valueOduzimanje = display.getText();
                 setSnumber(Integer.parseInt(valueOduzimanje));
-                double systemOduzimanje = getFnumber() + getSnumber();
+                double systemOduzimanje = getFnumber() - getSnumber();
                 display.setText(String.valueOf(systemOduzimanje));
                 String oldPromOduzimanje = prom.getText();
                 prom.setText(oldPromOduzimanje + valueOduzimanje);
@@ -204,10 +245,13 @@ public class Controller implements Initializable {
             case"x":
                 String valueMnozenje = display.getText();
                 setSnumber(Integer.parseInt(valueMnozenje));
-                double systemMnozenje = getFnumber() * getSnumber();
-                display.setText(String.valueOf(systemMnozenje));
-                String oldPromMnozenje = prom.getText();
-                prom.setText(oldPromMnozenje + valueMnozenje);
+                if (getSnumber() == 0 || getFnumber() == 0) display.setText("0");
+                else {
+                    double systemMnozenje = getFnumber() * getSnumber();
+                    display.setText(String.valueOf(systemMnozenje));
+                    String oldPromMnozenje = prom.getText();
+                    prom.setText(oldPromMnozenje + valueMnozenje);
+                }
                 break;
 
             case "/":

@@ -155,10 +155,10 @@ class MainTest {
     public void tacka (FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn8");
-        robot.clickOn("#plusBtn");
-        robot.clickOn("#plusBtn");
-        robot.clickOn("#plusBtn");
-        robot.clickOn("#plusBtn");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#dotBtn");
         robot.clickOn("#equalsBtn");
         assertEquals("8", display.getText());
     }

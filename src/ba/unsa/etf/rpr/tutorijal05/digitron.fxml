@@ -15,163 +15,74 @@
     </stylesheets>
 
     <columnConstraints>
-        <ColumnConstraints hgrow="ALWAYS" maxWidth="101.0" minWidth="10.0" percentWidth="0.0" prefWidth="70.0" />
-        <ColumnConstraints hgrow="ALWAYS" maxWidth="93.0" minWidth="10.0" prefWidth="72.0" />
-        <ColumnConstraints hgrow="ALWAYS" maxWidth="87.0" minWidth="10.0" prefWidth="67.0" />
-        <ColumnConstraints hgrow="ALWAYS" maxWidth="92.0" minWidth="10.0" prefWidth="77.0" />
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="0.0" prefWidth="70.0" />
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="72.0" />
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="67.0" />
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="77.0" />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="81.0" vgrow="ALWAYS" />
-        <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="59.0" vgrow="ALWAYS" />
-        <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="64.0" vgrow="ALWAYS" />
-        <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="57.0" vgrow="ALWAYS" />
-        <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="63.0" vgrow="ALWAYS" />
-        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="59.0" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
     </rowConstraints>
     <children>
-        <Button fx:id="btn1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn1" text="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn1"  onAction="#btn1" text="1" GridPane.rowIndex="4" >
       </Button>
-        <Button fx:id="btn2" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn2" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn2" onAction="#btn2" text="2" GridPane.columnIndex="1"  GridPane.rowIndex="4" >
+
       </Button>
-        <Button fx:id="btn3" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn3" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn3"  onAction="#btn3" text="3" GridPane.columnIndex="2"  GridPane.rowIndex="4"  >
+
       </Button>
-        <Button fx:id="btn4" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn4" text="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn4" onAction="#btn4" text="4" GridPane.rowIndex="3" >
+
       </Button>
-        <Button fx:id="btn5" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn5" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn5"  onAction="#btn5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+
       </Button>
-        <Button fx:id="btn6" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn6" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn6" onAction="#btn6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+
       </Button>
-        <Button fx:id="btn7" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn7" text="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn7"  onAction="#btn7" text="7"  GridPane.rowIndex="2"  >
+
       </Button>
-        <Button fx:id="btn8" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn8" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn8"  onAction="#btn8" text="8" GridPane.columnIndex="1"  GridPane.rowIndex="2" >
+
       </Button>
-        <Button fx:id="btn9" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn9" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn9"  onAction="#btn9" text="9" GridPane.columnIndex="2"  GridPane.rowIndex="2" >
+
       </Button>
-        <Button fx:id="dotBtn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#dotBtn" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="dotBtn" onAction="#dotBtn" text="." GridPane.columnIndex="2"  GridPane.rowIndex="5" >
+
       </Button>
-        <Button fx:id="modBtn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mod_click" text="\%" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="modBtn" onAction="#mod_click" text="\%"  GridPane.rowIndex="1"  >
+
       </Button>
-        <Button fx:id="divBtn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#dijeljenje_click" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="divBtn"  onAction="#dijeljenje_click" text="/" GridPane.columnIndex="1"  GridPane.rowIndex="1" >
+
       </Button>
-        <Button fx:id="timesBtn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mnozenje_click" text="x" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="timesBtn" onAction="#mnozenje_click" text="x" GridPane.columnIndex="2"   GridPane.rowIndex="1" >
+
       </Button>
-        <Button fx:id="minusBtn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#oduzimanje_click" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="minusBtn" onAction="#oduzimanje_click" text="-" GridPane.columnIndex="3"  GridPane.rowIndex="1" >
+
       </Button>
-        <Button fx:id="plusBtn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sabiranje_click" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="plusBtn" onAction="#sabiranje_click" prefHeight="81.0" prefWidth="67.0" text="+" GridPane.columnIndex="3"  GridPane.rowIndex="2" GridPane.rowSpan="2" >
+
       </Button>
-        <Button fx:id="equalsBtn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#jednako_click" text="=" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="equalsBtn" onAction="#jednako_click" prefHeight="81.0" prefWidth="67.0" text="=" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+
       </Button>
-        <Button fx:id="btn0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn0" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-            <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-            </padding>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+        <Button fx:id="btn0"  onAction="#btn0" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+
       </Button>
-        <Label fx:id="display" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin></Label>
-        <Label fx:id="prom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin></Label>
+        <Label fx:id="display" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+        </Label>
+
+        <Label fx:id="prom"  GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+        </Label>
     </children>
 </GridPane>
