@@ -16,23 +16,6 @@ public class Controller implements Initializable {
 
     @FXML
     public Label display;
-    /*@FXML public Button btn1;
-    @FXML public Button btn2;
-    @FXML public Button btn3;
-    @FXML public Button btn4;
-    @FXML public Button btn5;
-    @FXML public Button btn6;
-    @FXML public Button btn7;
-    @FXML public Button btn8;
-    @FXML public Button btn9;
-    @FXML public Button btn0;
-    @FXML public Button zarez;
-    @FXML public Button oduzimanje;
-    @FXML public Button plusBtn;
-    @FXML public Button mnozenje;
-    @FXML public Button modBtn;
-    @FXML public Button dijeljenje;
-    @FXML public Button equalsBtn;*/
     @FXML public Label prom;
 
     private SimpleDoubleProperty fnumber = new SimpleDoubleProperty(0);
@@ -230,6 +213,7 @@ public class Controller implements Initializable {
             case "/":
                 String valueD = display.getText();
                 setSnumber(Integer.parseInt(valueD));
+                if (getSnumber() == 0) display.setText("Infinity");
                 double systemD = getFnumber() / getSnumber();
                 display.setText(String.valueOf(systemD));
                 String oldPromD = prom.getText();

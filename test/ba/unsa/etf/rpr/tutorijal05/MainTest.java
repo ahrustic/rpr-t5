@@ -106,4 +106,61 @@ class MainTest {
         robot.clickOn("#btn0");
         assertEquals("10", display.getText());
     }
+
+    @Test
+    public void mnozenjeSaNulom (FxRobot robot){
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn0");
+        robot.clickOn("#timesBtn");
+        robot.clickOn("#btn5");
+        assertEquals("0", display.getText());
+
+    }
+
+    @Test
+    public void operacijaMnozenje (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#equalsBtn");
+        assertEquals("8", display.getText());
+    }
+
+    @Test
+    public void uzastopneOperacije (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#timesBtn");
+        robot.clickOn("#btn1");
+        robot.clickOn("#equalsBtn");
+        assertEquals("10", display.getText());
+    }
+
+    @Test
+    public void djeljenjeSaNulom (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#divBtn");
+        robot.clickOn("#btn0");
+        robot.clickOn("#equalsBtn");
+        assertEquals("Infinity", display.getText());
+    }
+
+    @Test
+    public void tacka (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#equalsBtn");
+        assertEquals("8", display.getText());
+    }
+
 }
