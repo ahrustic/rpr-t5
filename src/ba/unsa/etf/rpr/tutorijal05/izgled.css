@@ -1,7 +1,7 @@
-#eq {
+#equalsBtn {
     -fx-background-color: lightcoral;
 }
 
-#input {
+#display {
     -fx-background-color: lightgreen;
 }
